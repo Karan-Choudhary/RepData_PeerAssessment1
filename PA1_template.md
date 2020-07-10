@@ -131,7 +131,7 @@ databyinterval <- stepdata%>% select(interval, steps) %>% na.omit() %>% group_by
 ggplot(databyinterval, aes(x=interval, y=tsteps))+ geom_line()
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
+![plot of chunk unnamed-chunk-8](figure/plot2.png)<!-- -->
 
 
 ## 5.The 5-minute interval that, on average, contains the maximum number of steps
@@ -263,7 +263,7 @@ summary(FullSummedDatabyDay)
 hist(FullSummedDatabyDay$totalsteps, xlab = "Steps" , main = "Total Daily Steps",breaks = 20)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
+![plot of chunk unnamed-chunk-12](figure/plot3.png)<!-- -->
 
 
 ## 4C Compare the mean and median of Old and New data.
@@ -324,4 +324,4 @@ facet_grid(weekend ~.) + xlab("Interval") + ylab("Mean of Steps") +
     ggtitle("Comparison of Average Number of Steps in Each Interval")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-14-1.png)<!-- -->
+![plot of chunk unnamed-chunk-15](figure/plot4.png)<!-- -->
