@@ -84,7 +84,7 @@ databyte <- stepdata %>% select(date,steps) %>% group_by(date) %>% summarize(tst
 hist(databyte$tsteps,xlab = "Total Daily Steps",main = "Histogram of Total Steps by Day",breaks = 20)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![](PA1_template_files/figure-html/plot1.png)<!-- -->
 
 
 ## 3.Calculate and report the mean and median of the total number of steps taken per day.
